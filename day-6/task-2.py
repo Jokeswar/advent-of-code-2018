@@ -23,7 +23,8 @@ for line in lines:
     x = int(line.split(",")[0])
     y = int(line.split(",")[1])
 
-    points.append(Point(100 + x, 100 + y))
+    points.append(Point(100 + x, 100 + y)) # +100 for edge case scenarios
+                                           # (infinite board)
 
 result = 0 
 
